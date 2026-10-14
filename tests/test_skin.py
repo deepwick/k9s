@@ -6,6 +6,7 @@ import yaml
 
 from deepwick_spec.ansi import runs
 from deepwick_spec.check_port import check_port
+from deepwick_spec.color import contrast_ratio
 from deepwick_spec.palette import load_palette
 from deepwick_spec.tui import capture, tmux_available
 
@@ -60,6 +61,14 @@ def test_role_colors():
         for key in path:
             node = node[key]
         assert node == C[color], path
+
+
+def test_cursor_text_readable_on_every_row_color():
+    # k9s draws the cursor row as cursorFgColor on the row's status color, not on cursorBgColor.
+    s = skin()
+    cursor_fg = s["views"]["table"]["cursorFgColor"]
+    for key, color in s["frame"]["status"].items():
+        assert contrast_ratio(cursor_fg, color) >= 4.5, key
 
 
 @pytest.mark.skipif(not (tmux_available() and shutil.which("k9s")), reason="requires tmux and k9s")

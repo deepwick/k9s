@@ -73,7 +73,7 @@ k9s:
     table:
       fgColor: "#D4D4D4"
       bgColor: "#04041a"
-      cursorFgColor: "#D4D4D4"
+      cursorFgColor: "#04041a"
       cursorBgColor: "#264F78"
       markColor: "#D7BA7D"
       header:
