@@ -1,0 +1,105 @@
+# Deepwick for k9s
+k9s:
+  body:
+    fgColor: "#D4D4D4"
+    bgColor: "#04041a"
+    logoColor: "#569CD6"
+    logoColorMsg: "#D4D4D4"
+    logoColorInfo: "#4FC1FF"
+    logoColorWarn: "#DCDCAA"
+    logoColorError: "#F44747"
+  prompt:
+    fgColor: "#D4D4D4"
+    bgColor: "#04041a"
+    suggestColor: "#6E7899"
+    border:
+      command: "#569CD6"
+      default: "#1B2140"
+  info:
+    fgColor: "#D4D4D4"
+    sectionColor: "#7A86A8"
+    cpuColor: "#57A64A"
+    memColor: "#569CD6"
+    k9sRevColor: "#57A64A"
+  help:
+    fgColor: "#D4D4D4"
+    bgColor: "#04041a"
+    keyColor: "#569CD6"
+    numKeyColor: "#C586C0"
+    sectionColor: "#4EC9B0"
+  dialog:
+    fgColor: "#D4D4D4"
+    bgColor: "#04041a"
+    buttonFgColor: "#D4D4D4"
+    buttonBgColor: "#1B2140"
+    buttonFocusFgColor: "#04041a"
+    buttonFocusBgColor: "#569CD6"
+    labelFgColor: "#9CDCFE"
+    fieldFgColor: "#D4D4D4"
+  frame:
+    border:
+      fgColor: "#1B2140"
+      focusColor: "#569CD6"
+    menu:
+      fgColor: "#D4D4D4"
+      keyColor: "#569CD6"
+      numKeyColor: "#C586C0"
+    crumbs:
+      fgColor: "#04041a"
+      bgColor: "#569CD6"
+      activeColor: "#9CDCFE"
+    status:
+      newColor: "#D4D4D4"
+      modifyColor: "#569CD6"
+      addColor: "#57A64A"
+      pendingColor: "#DCDCAA"
+      errorColor: "#F44747"
+      highlightColor: "#D7BA7D"
+      killColor: "#F44747"
+      completedColor: "#6E7899"
+    title:
+      fgColor: "#D4D4D4"
+      bgColor: "#04041a"
+      highlightColor: "#569CD6"
+      counterColor: "#B5CEA8"
+      filterColor: "#D7BA7D"
+  views:
+    charts:
+      bgColor: "#04041a"
+      dialBgColor: "#04041a"
+      chartBgColor: "#04041a"
+      defaultDialColors: ["#569CD6", "#F44747"]
+      defaultChartColors: ["#569CD6", "#F44747"]
+    table:
+      fgColor: "#D4D4D4"
+      bgColor: "#04041a"
+      cursorFgColor: "#D4D4D4"
+      cursorBgColor: "#264F78"
+      markColor: "#D7BA7D"
+      header:
+        fgColor: "#D4D4D4"
+        bgColor: "#04041a"
+        sorterColor: "#4FC1FF"
+    xray:
+      fgColor: "#D4D4D4"
+      bgColor: "#04041a"
+      cursorColor: "#264F78"
+      cursorTextColor: "#D4D4D4"
+      graphicColor: "#6E7899"
+      showIcons: false
+    yaml:
+      keyColor: "#9CDCFE"
+      colonColor: "#D4D4D4"
+      valueColor: "#CE9178"
+    picker:
+      mainColor: "#D4D4D4"
+      focusColor: "#569CD6"
+      shortcutColor: "#C586C0"
+    logs:
+      fgColor: "#D4D4D4"
+      bgColor: "#04041a"
+      indicator:
+        fgColor: "#D4D4D4"
+        bgColor: "#04041a"
+        toggleOnColor: "#57A64A"
+        toggleOffColor: "#6E7899"
